@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+.wrapper {
+  margin: 20px 120px;
+}
+
 .column-1-5 {
   width: 18%;
   float: left;
@@ -69,6 +73,6 @@ body {
 }
 
 .prices-description {
-  width: 90%;
+  width: 100%;
   float: right;
 }
