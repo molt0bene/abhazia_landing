@@ -10,11 +10,11 @@
   align-items: center;
   justify-content: center;
 
-  background: url("../img/header_background.jpeg") center;
-  width: 610px;
-  height: 20vh;
-
-  border: 2px double gray;
+  background: url("../img/header_background.jpeg");
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .contents a {
