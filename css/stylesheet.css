@@ -1,8 +1,8 @@
 .text-header {
-  margin: 60px auto auto;
   max-width: 610px;
 
   color: ghostwhite;
+  font-size: 45px;
   text-shadow: 2px 0 2px black;
   text-align: center;
 
@@ -10,7 +10,6 @@
   align-items: center;
   justify-content: center;
 
-  background: url("../img/header_background.jpeg");
   overflow: hidden;
   width: 100%;
   height: auto;

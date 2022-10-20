@@ -27,12 +27,13 @@
     </div>
 
     <div class="section header">
-      <h1 class="text-header">VR-путешествие по Абхазии</h1>
+      <img src="img/abhazia.jpeg" alt="header image">
+      <h1 class="text-header centered" id="text-header">VR-путешествие по Абхазии</h1>
     </div>
 
     <div class="section">
       <h2 id="about" class="div-title">О нас</h2>
-      <img class="left-image" src="img/flag.jpeg" alt="Флаг Абхазии" width="150" height="106">
+      <img class="left-image" src="img/abkhazian_flag.jpeg" alt="Флаг Абхазии" width="120">
       <p>Абхазия – государство на северо-западе Закавказья, край с многотысячелетней историей,
         воплотившейся в древних храмах и святилищах, покрытых бархатом мха старинных мостах,
         опоясывающих бурные реки, величественных садах и дендропарках. Из любой точки страны
@@ -50,7 +51,7 @@
 
     <div class="section">
       <h2 id="program" class="div-title">Что входит в программу</h2>
-      <img class="right-image" src="img/vr_glasses.jpeg" alt="VR-очки" width="180" height=auto>
+      <img class="right-image" src="img/vr_glasses.jpeg" alt="VR-очки" width="120">
       <p>В нашей уютной современной студии вам выдадут VR-очки и проведут краткий инструктаж. После этого
         у вас будет целый час на то, чтобы осматривать окрестности Абхазии, посещать достопримечательности и
         наблюдать за местными животными, а самые отважные могут даже прокатиться на местном джипе.</p><br>
@@ -170,5 +171,15 @@
       <p>Часы работы: ежедневно 10:00-22:00</p>
     </div>
   </div>
+
+  <script>
+      let header_text = document.getElementById("text-header");
+
+      window.addEventListener('scroll', function (){
+          var vertical_scroll = window.scrollY;
+
+          header_text.style.top = 150 + vertical_scroll * 0.5 + 'px';
+      })
+  </script>
 </body>
 </html>

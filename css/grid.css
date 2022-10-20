@@ -11,6 +11,10 @@ body {
 
 .wrapper {
   margin: 20px 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background: whitesmoke;
 }
 
 .column-1-5 {
@@ -35,9 +39,15 @@ body {
 }
 
 .header {
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section {
@@ -54,11 +64,13 @@ body {
 .left-image {
   float: left;
   margin-right: 2%;
+  border-radius: 50%;
 }
 
 .right-image {
   float: right;
   margin-left: 2%;
+  border-radius: 50%;
 }
 
 .payment {
