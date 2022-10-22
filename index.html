@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" charset="utf-8" src="parallax.js-1.5.0/parallax.min.js"></script>
 </head>
 
 <body>
@@ -26,8 +28,7 @@
       <div class="column-1-5"><a href="#contacts">Контакты</a></div>
     </div>
 
-    <div class="section header">
-      <img src="img/abhazia.jpeg" alt="header image">
+    <div class="section header parallax-window" data-parallax="scroll" data-image-src="img/abhazia.jpeg" data-z-index="2">
       <h1 class="text-header centered" id="text-header">VR-путешествие по Абхазии</h1>
     </div>
 
@@ -171,15 +172,5 @@
       <p>Часы работы: ежедневно 10:00-22:00</p>
     </div>
   </div>
-
-  <script>
-      let header_text = document.getElementById("text-header");
-
-      window.addEventListener('scroll', function (){
-          var vertical_scroll = window.scrollY;
-
-          header_text.style.top = 150 + vertical_scroll * 0.5 + 'px';
-      })
-  </script>
 </body>
 </html>
